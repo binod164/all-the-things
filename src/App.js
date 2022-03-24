@@ -132,9 +132,14 @@ const App = () => {
   ])
   const [albertasThings, setalbertasThings] = useState([
     {
-      name: "italian food",
+      name: "Italian Food",
       image: "https://cdn.pixabay.com/photo/2018/04/26/16/55/bruschetta-3352409_1280.jpg",  
       attributes: ["bruschetta", "canolis", "not a taco", "delicious"],
+    },
+    {
+      name: "The Jersey Shore",
+      image: "https://cdn.pixabay.com/photo/2016/08/15/16/42/fishing-1595827_960_720.jpg",  
+      attributes: ["sunny", "fun", "bike rides", "family"],
     },
   ])
 
