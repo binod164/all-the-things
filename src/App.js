@@ -129,6 +129,14 @@ const App = () => {
     },
   ])
 
+  const [charlesThings, setCharlesThings] = useState([
+    {
+      name: "coffee",
+      image: "https://i.imgur.com/oiogJRP.jpeg",  
+      attributes: ["lefty", "tall", "food", "beautiful"],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -148,6 +156,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-silly-things"
+        element={<SillyThings things={charlesThings} />}
       />
     </Routes>
   )
