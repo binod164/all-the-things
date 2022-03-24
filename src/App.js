@@ -5,6 +5,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import FunThings from './pages/FunThings/FunThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -49,9 +50,9 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [joseThings, setJoseThings] = useState([
     {
-      name: 'banana',
+      name: 'grapes',
       image:
         'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       attributes: [
@@ -73,7 +74,7 @@ const App = () => {
       ],
     },
     {
-      name: 'taco',
+      name: 'nachos',
       image:
         'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
       attributes: [
@@ -127,6 +128,27 @@ const App = () => {
       image: "https://imgs.xkcd.com/comics/functional.png",  
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
+
+  ])
+  const [albertasThings, setalbertasThings] = useState([
+    {
+      name: "Italian Food",
+      image: "https://cdn.pixabay.com/photo/2018/04/26/16/55/bruschetta-3352409_1280.jpg",  
+      attributes: ["bruschetta", "canolis", "not a taco", "delicious"],
+    },
+    {
+      name: "The Jersey Shore",
+      image: "https://cdn.pixabay.com/photo/2016/08/15/16/42/fishing-1595827_960_720.jpg",  
+      attributes: ["sunny", "fun", "bike rides", "family"],
+    },
+  ])
+
+  const [binodsThings, setBinodThings] = useState([
+    {
+      name: "italian food",
+      image: "https://imgs.xkcd.com/comics/functional.png",  
+      attributes: ["delicious", "canolis", "not a taco", "bruschetta"],
+    },
   ])
   const [charlesThings, setCharlesThings] = useState([
     {
@@ -146,7 +168,7 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<ManliestThings things={joseThings} />}
       />
       <Route
         path="/the-well-styled-things"
@@ -156,11 +178,20 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
+        <Route
+        path="/the-fun-things"
+        element={<FunThings things={albertasThings} />}
+      />
+      <Route
+        path="/the-silly-things"
+        element={<SillyThings things={binodsThings} />}
+        />
       <Route
         path="/the-silly-things"
         element={<SillyThings things={charlesThings} />}
-      />
+        />
     </Routes>
+    
   )
 }
 
