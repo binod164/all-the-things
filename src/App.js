@@ -150,6 +150,13 @@ const App = () => {
       attributes: ["delicious", "canolis", "not a taco", "bruschetta"],
     },
   ])
+  const [charlesThings, setCharlesThings] = useState([
+    {
+      name: "coffee",
+      image: "https://i.imgur.com/oiogJRP.jpeg",  
+      attributes: ["lefty", "tall", "food", "fitness"],
+    },
+  ])
 
   return (
     <Routes>
@@ -171,10 +178,18 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
-      <Route
+        <Route
         path="/the-fun-things"
         element={<FunThings things={albertasThings} />}
       />
+      <Route
+        path="/the-silly-things"
+        element={<SillyThings things={binodsThings} />}
+        />
+      <Route
+        path="/the-silly-things"
+        element={<SillyThings things={charlesThings} />}
+        />
     </Routes>
     
   )
