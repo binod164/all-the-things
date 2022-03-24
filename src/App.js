@@ -152,7 +152,7 @@ const App = () => {
     {
       name: "italian food",
       image: "https://imgs.xkcd.com/comics/functional.png",  
-      attributes: ["delicious", "canolis", "not a taco", "bruschetta"],
+      attributes: ["delicious", "canolis", "taco", "bruschetta"],
     },
   ])
   const [charlesThings, setCharlesThings] = useState([
