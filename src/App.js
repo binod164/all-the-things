@@ -150,9 +150,9 @@ const App = () => {
 
   const [binodsThings, setBinodThings] = useState([
     {
-      name: "italian food",
-      image: "https://imgs.xkcd.com/comics/functional.png",  
-      attributes: ["delicious", "canolis", "taco", "bruschetta"],
+      name: "animals",
+      image: "https://i.imgur.com/JtYtusZ.jpg",  
+      attributes: ["beautiful", "friendly", "cool", "smart"],
     },
   ])
   const [charlesThings, setCharlesThings] = useState([
@@ -188,7 +188,7 @@ const App = () => {
         element={<FunThings things={albertasThings} />}
       />
       <Route
-        path="/the-silly-things"
+        path="/the-cool-things"
         element={<SillyThings things={binodsThings} />}
         />
       <Route
