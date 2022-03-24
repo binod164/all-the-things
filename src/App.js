@@ -132,7 +132,7 @@ const App = () => {
     {
       name: "coffee",
       image: "https://i.imgur.com/oiogJRP.jpeg",  
-      attributes: ["lefty", "tall", "food", "beautiful"],
+      attributes: ["lefty", "tall", "food", "fitness"],
     },
   ])
 
