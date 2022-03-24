@@ -5,6 +5,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import FunThings from './pages/FunThings/FunThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -127,12 +128,13 @@ const App = () => {
       image: "https://imgs.xkcd.com/comics/functional.png",  
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
+
   ])
-  const [albertasThings, albertasThings] = useState([
+  const [albertasThings, setalbertasThings] = useState([
     {
       name: "italian food",
-      image: "https://imgs.xkcd.com/comics/functional.png",  
-      attributes: ["delicious", "canolis", "not a taco", "bruschetta"],
+      image: "https://cdn.pixabay.com/photo/2018/04/26/16/55/bruschetta-3352409_1280.jpg",  
+      attributes: ["bruschetta", "canolis", "not a taco", "delicious"],
     },
   ])
 
@@ -157,8 +159,8 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-        path="/the-silly-things"
-        element={<SillyThings things={albertasThings} />}
+        path="/the-fun-things"
+        element={<FunThings things={albertasThings} />}
       />
     </Routes>
     
