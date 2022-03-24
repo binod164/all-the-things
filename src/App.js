@@ -7,6 +7,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import FunThings from './pages/FunThings/FunThings'
 import Landing from './pages/Landing/Landing'
+import CoolThings from './pages/CoolThings//CoolThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -189,7 +190,7 @@ const App = () => {
       />
       <Route
         path="/the-cool-things"
-        element={<SillyThings things={binodsThings} />}
+        element={<CoolThings things={binodsThings} />}
         />
       <Route
         path="/the-silly-things"
