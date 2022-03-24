@@ -2,7 +2,7 @@ import ThingCard from '../../components/ThingCard/ThingCard'
 
 import { Link } from 'react-router-dom'
 
-const FunctionalThings = (props) => {
+const CoolThings = (props) => {
   return (
     <>
       <h1>Binod's Things</h1>
@@ -14,5 +14,4 @@ const FunctionalThings = (props) => {
     </>
   )
 }
- 
-export default FunctionalThings
+export default CoolThings
