@@ -128,7 +128,6 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ])
-
   const [charlesThings, setCharlesThings] = useState([
     {
       name: "coffee",
