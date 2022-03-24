@@ -136,6 +136,14 @@ const App = () => {
     },
   ])
 
+  const [binodsThings, setBinodThings] = useState([
+    {
+      name: "italian food",
+      image: "https://imgs.xkcd.com/comics/functional.png",  
+      attributes: ["delicious", "canolis", "not a taco", "bruschetta"],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
