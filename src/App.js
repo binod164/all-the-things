@@ -141,6 +141,11 @@ const App = () => {
       image: "https://cdn.pixabay.com/photo/2016/08/15/16/42/fishing-1595827_960_720.jpg",  
       attributes: ["sunny", "fun", "bike rides", "family"],
     },
+    {
+      name: "Exercise",
+      image: "https://images.pexels.com/photos/3619062/pexels-photo-3619062.jpeg?cs=srgb&dl=pexels-juan-vargas-3619062.jpg&fm=jpg",  
+      attributes: ["fun", "healthy", "positive"],
+    },
   ])
 
   const [binodsThings, setBinodThings] = useState([
