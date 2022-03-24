@@ -50,9 +50,9 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [joseThings, setJoseThings] = useState([
     {
-      name: 'banana',
+      name: 'grapes',
       image:
         'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       attributes: [
@@ -74,7 +74,7 @@ const App = () => {
       ],
     },
     {
-      name: 'taco',
+      name: 'nachos',
       image:
         'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
       attributes: [
@@ -156,7 +156,7 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<ManliestThings things={joseThings} />}
       />
       <Route
         path="/the-well-styled-things"
